@@ -24,15 +24,17 @@ shinyUI(fluidPage(
                            inline = T),
       sliderInput("age",
                   "Workforce age range",
-                  min = 1,
-                  max = 99,
+                  min = 0,
+                  max = 100,
                   value = c(16,66))
     ),
     
 
 # Show the plot
     mainPanel(
-      textOutput("textur")
+      textOutput("textur1"),
+      textOutput("textur2"),
+      textOutput("textur3")
     )
   )
 ))
