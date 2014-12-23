@@ -30,7 +30,7 @@ shinyServer(function(input, output, session) {
       input$depgrps,
       children = label_children,
       elders = label_elders,
-      both = paste0("(",label_children, " and ", label_elders, ")")
+      both = paste0("(", label_both, ")")
     )    
     nevnari <- paste0("'",input$age[1], "-", input$age[2],"'")
     
